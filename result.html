@@ -1,0 +1,21 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Result</h1>
+        <img src="{{ url_for('uploaded_file', filename=image_filename) }}" alt="Uploaded Image">
+        <p><strong>Infection Percentage:</strong> {{ "%.2f"|format(result['infection_percentage']) }}%</p>
+        <p><strong>Severity Level:</strong> {{ result['severity'] }}</p>
+        <a href="/" class="upload-btn">Upload Another Image</a>
+
+    </div>
+</body>
+</html>

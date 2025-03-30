@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url("../static/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #e3e3e3; /* Ensures text remains readable */
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(90, 79, 109, 0.539);  /*Slight transparency for readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Optional: Style file input */
+input[type="file"] {
+    margin: 10px auto;
+    display: block;
+}
+
+/* Optional: Add styling to the output result */
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #d9534f;
+}
+.upload-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745; /* Blue color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Ensure proper button spacing */
+    margin-top: 20px;
+}
+
+.upload-btn:hover {
+    background-color:  #218838;
+}
+
